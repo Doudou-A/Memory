@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/GameController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/indexView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/Helvetica-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/Helvetica.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/helvetica-light-587ebe5a59211.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/helvetica-rounded-bold-5871d05ead8de.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style/css/accueil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style/css/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/abricot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cerise2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cerise3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/citron-jaune.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/citron-vert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/fraise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/frambroise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/grenade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mangue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pasteque.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/peche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/poire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pomme-rouge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pomme-verte.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/prune.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/raisin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style/css/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/GameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/indexView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Accueil" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,10 +62,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/View" />
       <recent name="$PROJECT_DIR$/public/font" />
       <recent name="$PROJECT_DIR$/Controller" />
@@ -71,6 +84,8 @@
       <workItem from="1640204614617" duration="259000" />
       <workItem from="1640204902882" duration="1801000" />
       <workItem from="1640208602109" duration="3231000" />
+      <workItem from="1640327755068" duration="64000" />
+      <workItem from="1640328640092" duration="6129000" />
     </task>
     <servers />
   </component>
@@ -78,6 +93,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="354" y="132" key="#Inspections" timestamp="1640329076553">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1640329076553" />
     <state x="335" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640209382096">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -86,9 +105,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1640207978992" />
-    <state x="385" y="196" key="search.everywhere.popup" timestamp="1640209724503">
+    <state x="229" y="86" key="SettingsEditor" timestamp="1640329102422">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640209724503" />
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1640329102422" />
+    <state x="421" y="176" width="597" height="548" key="find.popup" timestamp="1640331932071">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="176" width="597" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1640331932071" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1640332703631">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640332703631" />
   </component>
 </project>

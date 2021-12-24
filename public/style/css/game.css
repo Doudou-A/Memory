@@ -1,0 +1,13 @@
+.plateau{
+    background-color: rgb(213, 211, 255);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.image{
+    margin: 5px;
+}

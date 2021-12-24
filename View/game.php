@@ -1,12 +1,15 @@
 <?php $title = 'Accueil' ?>
-<?php $link = '<link rel="stylesheet" href="/public/style/css/accueil.css" />' ?>
+<?php $link = '<link rel="stylesheet" href="/public/style/css/game.css" />' ?>
 
-    <div class="title">MEMORY GAME</div>
-    <form class="formulary" action="index.php?action=game" method="POST">
-        <?= htmlspecialchars($pseudo) ?>
-        <input class="button" type="submit" name="valide" value="Jouer"/>
-    </form>
+        <div>
+            Le joueur : <?= htmlspecialchars($pseudo) ?>
+        </div>
 
+        <div class="plateau">
+            <?php 	foreach ($aImage as $key => $image) :?>
+                <img class="image" src="public/img/<?=$image?>" width="9%">
+            <?php 	endforeach ?>
+    </div>
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
