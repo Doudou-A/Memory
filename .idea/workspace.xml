@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="" />
+    <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/GameController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/indexView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/Helvetica-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/Helvetica.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/helvetica-light-587ebe5a59211.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/helvetica-rounded-bold-5871d05ead8de.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style/css/accueil.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +24,18 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="22eimY9M3YYp6x5tUEUEdjrnIU0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,8 +43,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/View" />
+      <recent name="$PROJECT_DIR$/public/font" />
+      <recent name="$PROJECT_DIR$/Controller" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -30,10 +69,26 @@
       <option name="presentableId" value="Default" />
       <updated>1640204613465</updated>
       <workItem from="1640204614617" duration="259000" />
+      <workItem from="1640204902882" duration="1801000" />
+      <workItem from="1640208602109" duration="3231000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="335" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640209382096">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="335" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1640209382096" />
+    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1640207978992">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1640207978992" />
+    <state x="385" y="196" key="search.everywhere.popup" timestamp="1640209724503">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640209724503" />
   </component>
 </project>

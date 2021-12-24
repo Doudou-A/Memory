@@ -1,0 +1,29 @@
+.formulary{
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: solid 2px #2B2B2B;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 25%;
+}
+
+.button {
+    background-color: rgb(213, 211, 255);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 20%;
+}
+
+.button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: #eaeaea;
+    font-family: 'Helvetica';
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../font/Helvetica.ttf') format('truetype');
+    url('../../font/Helvetica-Bold.ttf') format('truetype');
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+}
