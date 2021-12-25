@@ -9,8 +9,8 @@ ob_start();
     <div id="gameTime" style="display: none">0</div> <!-- Chronomètre du jeu -->
 
     <!-- Nom du Joueur  -->
-    <div>
-        Le joueur : <?= htmlspecialchars($pseudo); ?>
+    <div style="display: flex; font-size: 20px; margin: 30px">
+        Le joueur : <div id="pseudo"><?= htmlspecialchars($pseudo); ?></div>
     </div>
 
 
@@ -25,7 +25,7 @@ ob_start();
     <!-- Barre de progression global-->
     <div id="myProgress">
         <!-- Barre de couleur qui s'agrandit par la fonction barProgressMove()x -->
-        <div id="myBar"></div>
+        <div id="myBar">0%</div>
     </div>
 
     <script type="text/javascript">

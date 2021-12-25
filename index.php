@@ -1,9 +1,9 @@
 <?php
 
-//Autoloader
-spl_autoload_register(function ($class_name) {
-    include 'controller/' . $class_name . '.php';
-});
+require 'controller/GameController.php';
+require 'controller/HomeController.php';
+
+use Controller\{HomeController, GameController};
 
 //Routeur
 try {

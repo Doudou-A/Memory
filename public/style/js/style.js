@@ -19,19 +19,23 @@ function onClickManage(json, aNumber) {
             $(".image").removeClass("pointer");
 
             setTimeout(() => { // la fonction sera déclanché après un temps déterminé (dans les paramètre)
-                if (thisNameImg != firstClickImg.name) { // Si les fruits sont différents. Les deux fruits affichés sont remplacés par une carte grise
+                if (thisNameImg != firstClickImg.name || id == firstClickImg.number) { // Si les fruits sont différents (ou click sur la même carte). Le(s) fruit(s) affiché(s) sont/est remplacé(s) par une carte grise
                     $(this).attr("src", "public/img/screen.png");
                     $("#" + firstClickImg.number).attr("src", "public/img/screen.png");
 
                     click -= 2;  // Les cartes ont été retournées, la valeur des deux clicks est donc soustraite au compteur
 
                 } else { // Si le nombre de click est égale au nombre de fruit total, la partie est terminée
-                    click == aNumber ? alert("Vous avez gagnééééééé ! Vous avez terminé la partie en " + $("#gameTime").html()) : null;
+                    if (click == aNumber) {
+                        alert("Vous avez gagnééééééé ! Vous avez terminé la partie en " + $("#gameTime").html())
+                        window.location.href = "index.php?action=addGame&pseudo=" + $("#pseudo").html() + "&time=" + $("#gameTime").html();
+                    }
+                    ;
                 }
 
                 $(".image").bind("click", flippingCard);//Le onCLick est débloqué pour continuer la partie
                 $(".image").addClass("pointer");
-            }, 1000);
+            }, 500);
         }
     }
 
@@ -56,11 +60,11 @@ function barProgressMove() {
             clearInterval(time);
             alert("Vous avez perdu !!!!!!");
             location.reload();
-
         } else {
             // Incrémentation de la longueur de la barre de couleur et du temps
-            width += 0.02;
+            width += 0.05;
             $("#myBar").width(width + "%");
+            $("#myBar").html(parseInt(width) + "%");
 
             mill++;
             if (mill >= 10) {
@@ -72,7 +76,7 @@ function barProgressMove() {
                 }
             }
 
-            sec < 10  ? stringSec = "0"+sec : stringSec = +sec; // ajoût d'un 0 si la valeur de sec est entre 0 et 10
+            sec < 10 ? stringSec = "0" + sec : stringSec = +sec; // ajoût d'un 0 si la valeur de sec est entre 0 et 10
 
             gameTime = min + ":" + stringSec;
             $("#gameTime").html(gameTime); // Insértion de la valeur dans la div

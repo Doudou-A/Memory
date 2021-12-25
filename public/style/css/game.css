@@ -1,3 +1,9 @@
+#pseudo{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
 .plateau {
     background-color: rgb(213, 211, 255);
     margin-left: auto;
@@ -24,6 +30,9 @@
 
 #myBar {
     background-color: #c60707;
+    color: white;
+    height: 30px;
+    line-height: 30px; /* To center it vertically */
+    text-align: center; /* To center it horizontally (if you want) */
     width: 1%;
-    height: 20px;
 }
