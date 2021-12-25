@@ -1,3 +1,9 @@
+#pseudo{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
 .plateau {
     background-color: rgb(213, 211, 255);
     margin-left: auto;
@@ -16,7 +22,6 @@
 
 #myProgress {
     border: solid 2px #2B2B2B;
-    border-radius: 15px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +30,9 @@
 
 #myBar {
     background-color: #c60707;
-    border-radius: 30px;
+    color: white;
+    height: 30px;
+    line-height: 30px; /* To center it vertically */
+    text-align: center; /* To center it horizontally (if you want) */
     width: 1%;
-    height: 20px;
 }
