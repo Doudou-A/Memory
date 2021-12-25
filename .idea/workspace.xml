@@ -4,6 +4,22 @@
     <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cerise2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cerise2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cerise3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cerise3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/citron-jaune.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/citron-jaune.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/citron-vert.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/citron-vert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/fraise.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/fraise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/frambroise.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/frambroise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/grenade.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/grenade.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/mangue.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/mangue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/orange.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/orange.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pasteque.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pasteque.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/peche.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/peche.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/poire.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/poire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pomme-rouge.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pomme-rouge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pomme-verte.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pomme-verte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/prune.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/prune.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/raisin.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/raisin.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/css/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style/js/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/js/style.js" afterDir="false" />
     </list>
@@ -18,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ClickFonctionnalities" />
+        <entry key="$PROJECT_DIR$" value="progressBar" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,17 +114,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="521" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1640358353687" />
-    <state x="421" y="211" width="597" height="548" key="find.popup" timestamp="1640410259545">
+    <state x="421" y="215" width="597" height="548" key="find.popup" timestamp="1640420665613">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="211" width="597" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1640410259545" />
+    <state x="421" y="215" width="597" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1640420665613" />
     <state x="473" y="167" key="git4idea.branch.GitSmartOperationDialog" timestamp="1640336951615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="473" y="167" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1640336951615" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1640377020902">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1640422241645">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640377020902" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640422241645" />
   </component>
 </project>

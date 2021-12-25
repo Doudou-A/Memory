@@ -16,7 +16,6 @@
 
 #myProgress {
     border: solid 2px #2B2B2B;
-    border-radius: 15px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +24,6 @@
 
 #myBar {
     background-color: #c60707;
-    border-radius: 30px;
     width: 1%;
     height: 20px;
 }

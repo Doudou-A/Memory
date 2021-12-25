@@ -1,74 +1,81 @@
-function onClickManage(json,aNumber) {
-        //Compteur de click
-        var click = 0;
+function onClickManage(json, aNumber) {
+    var click = 0; //Compteur de click
+    let firstClickImg;
+    let obj = jQuery.parseJSON(json);// Récupération de l'objet contenant tous les fruits
 
-        // Déclaration de l'objet. Il contiendra les données du premier fruit affiché afin de les comparer aux données du deuxième fruit.
-        let firstClickImg;
+    // Fonction qui gère l'affichage des cartes
+    var flippingCard = function () {
+        var id = $(this).data('id');
+        var thisNameImg = obj[id];//Récupération du nom du fruit à partir de l'id de la div
+        $(this).attr("src", "public/img/" + thisNameImg);// Affichage du fruit
 
-        // Récupération de l'objet (contenant tous les fruits) en faisant un parse sur le Json
-        let obj = jQuery.parseJSON(json);
+        click += 1; // Incrémentation du clique
 
-        // Fonction qui gère l'affichage des cartes
-        var flippingCard = function () {
-            //id de la div qui correspond à un fruit possédant le même id dans l'objet
-            var id = $(this).data('id');
+        if (click % 2) { // Si la valeur du click est impaire on sauvegarde les données du fruit dans un objet
+            firstClickImg = {"number": id, "name": thisNameImg}
+        } else { // Si la valeur du click est paire
 
-            //Récupération du nom du fruit à partir de l'id de la div
-            var thisNameImg = obj[id];
+            $(".image").unbind("click", flippingCard);// onClick bloqué pour éviter de retourner plus de deux cartes simultanément
+            $(".image").removeClass("pointer");
 
-            // Affichage de la carte en modifiant la donnée src de la div. La carte grise est remplacé par le fruit
-            $(this).attr("src", "public/img/" + thisNameImg);
+            setTimeout(() => { // la fonction sera déclanché après un temps déterminé (dans les paramètre)
+                if (thisNameImg != firstClickImg.name) { // Si les fruits sont différents. Les deux fruits affichés sont remplacés par une carte grise
+                    $(this).attr("src", "public/img/screen.png");
+                    $("#" + firstClickImg.number).attr("src", "public/img/screen.png");
 
-            //Incrémentation du compteur
-            click += 1;
+                    click -= 2;  // Les cartes ont été retournées, la valeur des deux clicks est donc soustraite au compteur
 
-            if (click % 2) { // Si la valeur du click est impaire on sauvegarde les données du fruit dans un objet
-                firstClickImg = {"number": id, "name": thisNameImg}
-            } else { // Si la valeur du click est paire
+                } else { // Si le nombre de click est égale au nombre de fruit total, la partie est terminée
+                    click == aNumber ? alert("Vous avez gagnééééééé ! Vous avez terminé la partie en " + $("#gameTime").html()) : null;
+                }
 
-                // Le onClick est bloqué pour éviter de retourner plus de deux cartes simultanément
-                $(".image").unbind("click", flippingCard);
-                $(".image").removeClass("pointer");
-
-                setTimeout(() => { // la fonction sera déclanché après un temps déterminé dans les paramètres de la fonction
-                    if (thisNameImg != firstClickImg.name) { // Si les fruits sont différents. Les deux fruits affichés sont remplacés par une carte grise
-
-                        $(this).attr("src", "public/img/screen.png");
-                        $("#" + firstClickImg.number).attr("src", "public/img/screen.png");
-
-                        // Les cartes ont été retourné, la valeur des deux clicks est donc soustraite au compteur
-                        click -= 2;
-                    } else {
-                        click == aNumber ? alert("Vous avez gagnééééééé !"): null;
-                    }
-
-                    //Le onCLick est débloqué pour continuer la partie
-                    $(".image").bind("click", flippingCard);
-                    $(".image").addClass("pointer");
-                }, 1000);
-            }
+                $(".image").bind("click", flippingCard);//Le onCLick est débloqué pour continuer la partie
+                $(".image").addClass("pointer");
+            }, 1000);
         }
+    }
 
-        // Déclaration du onClick sur la fonction
-        $(".image").bind("click", flippingCard);
+    // Déclaration du onClick sur la fonction
+    $(".image").bind("click", flippingCard);
 
 }
 
-var i = 0;
 function barProgressMove() {
-    if (i == 0) {
-        i = 1;
-        var width = 0;
-        var id = setInterval(frame, 100);
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-                alert("Vous avez perdu !!!!!!");
-                location.reload();
-            } else {
-                width += 0.02;
-                $("#myBar").width(width + "%");
+    var width = 0;
+    var gameTime // Chronomètre de la partie
+    var mill = 0;
+    var sec = 0;
+    var stringSec;
+    var min = 0;
+
+    var time = setInterval(frame, 100);// La fonction frame est exécuté sur un intervalle de temps défini par le paramètre
+
+    function frame() {
+        if (width >= 100) {
+            // Reset width et rechargement de la page pour une nouvelle partie
+            clearInterval(time);
+            alert("Vous avez perdu !!!!!!");
+            location.reload();
+
+        } else {
+            // Incrémentation de la longueur de la barre de couleur et du temps
+            width += 0.02;
+            $("#myBar").width(width + "%");
+
+            mill++;
+            if (mill >= 10) {
+                mill = 0;
+                sec++;
+                if (sec >= 60) {
+                    sec = 0;
+                    min++;
+                }
             }
+
+            sec < 10  ? stringSec = "0"+sec : stringSec = +sec; // ajoût d'un 0 si la valeur de sec est entre 0 et 10
+
+            gameTime = min + ":" + stringSec;
+            $("#gameTime").html(gameTime); // Insértion de la valeur dans la div
         }
     }
 }
