@@ -2,8 +2,8 @@
 
 namespace Controller;
 
-require 'model/GameManager.php';
-require 'model/UserManager.php';
+require_once 'model/GameManager.php';
+require_once 'model/UserManager.php';
 
 use Model\{Game, GameManager, User, UserManager};
 
@@ -50,8 +50,11 @@ class GameController
         $managerGame = new GameManager();
         $managerUser = new UserManager();
 
+        $aTime = explode(":", $_GET['time']);
+        $time = (int)$aTime[0]*60 + (int)$aTime[1];//Conversion du temps en minute en seconde pour faciliter la récupération des meilleurs temps
+
         $game = new Game([
-            'gameTime' => $_GET['time'],
+            'gameTime' => $time,
         ]);
 
         $idGame = $managerGame->add($game); // Insertion de l'objet en bdd, la fonction retourne l'id
@@ -61,6 +64,9 @@ class GameController
             'idGame' => $idGame
         ]);
         $managerUser->add($user);
+
+        header("Location: index.php");
+        exit;
 
     }
 

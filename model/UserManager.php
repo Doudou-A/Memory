@@ -28,6 +28,18 @@ class UserManager
 		$query->execute();
 	}
 
+    public function getByGame($idGame)
+    {
+        $idGame = (int) $idGame;
+        $query = $this->_db->prepare('SELECT * FROM User WHERE idGame = :idGame');
+        $query->bindValue(':idGame', $idGame, PDO::PARAM_INT);
+        $query->execute();
+
+        $data = $query->fetch(PDO::FETCH_ASSOC);
+
+        return new User($data);
+    }
+
 	public function setDb(PDO $db)
 	{
 		$this->_db = $db;

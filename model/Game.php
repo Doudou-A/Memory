@@ -42,7 +42,7 @@ class Game
 
 	public function setGameTime($gameTime)
 	{
-		if (is_string($gameTime))
+		if ($gameTime > 0)
 		{
 			$this->_gameTime = $gameTime;
 		}
