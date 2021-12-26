@@ -7,8 +7,11 @@ use Controller\{HomeController, GameController};
 
 //Routeur
 try {
+    // Instanciation des controller
     $controllerFirst = new HomeController;
     $controllerSecond = new GameController;
+
+    // Recherche de lafonction dans les controller à partir du paramètre 'action' transmis par l'url
     if (!empty($_GET['action'])) {
         $action = $_GET['action'];
         if (method_exists($controllerFirst, $action)) {

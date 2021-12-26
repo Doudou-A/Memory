@@ -12,7 +12,6 @@
 
 <body>
 <div class="title">Jeu de Mémoire</div>
-
 <?= $content; ?>
 
 </body>

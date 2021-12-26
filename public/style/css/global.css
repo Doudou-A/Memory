@@ -3,6 +3,7 @@ body {
     font-family: 'Helvetica';
 }
 
+/*Insertion d'une nouvelle police dans le projet */
 @font-face {
     font-family: 'Helvetica';
     src: url('../../font/Helvetica.ttf') format('truetype');

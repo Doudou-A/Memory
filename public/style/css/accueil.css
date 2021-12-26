@@ -1,17 +1,4 @@
-.formulary{
-    display: flex;
-    flex-direction: column;
-}
-
-.input {
-    border: solid 2px #2B2B2B;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    width: 25%;
-}
-
+/* FORMULAIRE */
 .button {
     background-color: rgb(213, 211, 255);
     border: none;
@@ -26,4 +13,81 @@
 
 .button:hover {
     cursor: pointer;
+}
+
+.formulary{
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: solid 2px #2B2B2B;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 25%;
+}
+
+/* CLASSEMENT */
+
+.classement {
+    border-bottom: solid 2px #2B2B2B;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.frstRank {
+    background-color: #ffd700;
+    border-top: none !important;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.scdRank {
+    background-color: #C0C0C0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.trdRank {
+    background-color: #706337;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.timeRank {
+    border-left: solid 2px #2B2B2B;
+    width: 30%;
+}
+
+.pseudoRank {
+    width: 70%;
+    overflow: auto;
+}
+
+.dataRank {
+    padding: 10px;
+    text-align: center;
+}
+
+.ranking {
+    border: solid 2px #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 20%;
+}
+
+.notRank {
+    margin: 5px;
+    text-align: center;
+}
+
+.score {
+    border-top: solid 2px #2B2B2B;
+    display: flex;
 }

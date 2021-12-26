@@ -27,7 +27,7 @@ function onClickManage(json, aNumber) {
 
                 } else { // Si le nombre de click est égale au nombre de fruit total, la partie est terminée
                     if (click == aNumber) {
-                        alert("Vous avez gagnééééééé ! Vous avez terminé la partie en " + $("#gameTime").html())
+                        alert("Vous avez gagnééééééé !")
                         window.location.href = "index.php?action=addGame&pseudo=" + $("#pseudo").html() + "&time=" + $("#gameTime").html();
                     }
                     ;
@@ -46,11 +46,7 @@ function onClickManage(json, aNumber) {
 
 function barProgressMove() {
     var width = 0;
-    var gameTime // Chronomètre de la partie
-    var mill = 0;
-    var sec = 0;
-    var stringSec;
-    var min = 0;
+    var gameTime = 0; // Chronomètre de la partie
 
     var time = setInterval(frame, 100);// La fonction frame est exécuté sur un intervalle de temps défini par le paramètre
 
@@ -66,20 +62,8 @@ function barProgressMove() {
             $("#myBar").width(width + "%");
             $("#myBar").html(parseInt(width) + "%");
 
-            mill++;
-            if (mill >= 10) {
-                mill = 0;
-                sec++;
-                if (sec >= 60) {
-                    sec = 0;
-                    min++;
-                }
-            }
-
-            sec < 10 ? stringSec = "0" + sec : stringSec = +sec; // ajoût d'un 0 si la valeur de sec est entre 0 et 10
-
-            gameTime = min + ":" + stringSec;
-            $("#gameTime").html(gameTime); // Insértion de la valeur dans la div
+            gameTime += 0.1;
+            $("#gameTime").html(parseInt(gameTime)); // Insértion de la valeur dans la div
         }
     }
 }
