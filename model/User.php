@@ -4,6 +4,7 @@ namespace Model;
 
 class User
 {
+    // Déclaration des attributs
 	private $_id;
     private $_name;
     private $_idGame;
@@ -25,13 +26,11 @@ class User
     }
 
 	//Getters
-
 	public function id() { return $this->_id; }
     public function name()	{ return $this->_name;	}
     public function idGame()	{ return $this->_idGame;	}
 
 	//Setters
-
 	public function setId($id)
 	{
 		$id = (int) $id;

@@ -4,7 +4,8 @@ namespace Model;
 
 class Game
 {
-	private $_id;
+    // Déclaration des attributs
+    private $_id;
 	private $_gameTime;
 
 	public function __construct(array $data)
@@ -24,12 +25,10 @@ class Game
     }
 
 	//Getters
-
 	public function id() { return $this->_id; }
 	public function gameTime()	{ return $this->_gameTime;	}
 
 	//Setters
-
 	public function setId($id)
 	{
 		$id = (int) $id;

@@ -17,7 +17,7 @@ class GameManager
     	$this->setDb(DbConfig::dbConnect());
  	}
 
- 	//Ajouter une partie dans la bdd
+ 	//Ajouter une partie dans la bdd, elle retourne l'id de l'entité insérer en base
 	public function add(Game $game)
 	{
 		$query = $this->_db->prepare('INSERT INTO game(gameTime) VALUES(:gameTime)');
@@ -29,7 +29,8 @@ class GameManager
         return $this->_db->lastInsertId();
 	}
 
-    public function getBest()
+    // Récupération de la donnée temps de tous jeux
+    public function getAll()
     {
         $query = $this->_db->query('SELECT gameTime FROM Game');
         $data = $query->fetchAll(\PDO::FETCH_ASSOC);
@@ -37,6 +38,7 @@ class GameManager
         return $data;
     }
 
+    // Renvoi une partie à partir de la donnée temps
     public function getByTime($time)
     {
         $time = (int) $time;

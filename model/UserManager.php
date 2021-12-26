@@ -17,7 +17,7 @@ class UserManager
     	$this->setDb(DbConfig::dbConnect());
  	}
 
- 	//Ajouter un Utilisateur
+ 	// Ajouter un Utilisateur
 	public function add(User $user)
 	{
 		$query = $this->_db->prepare('INSERT INTO user(name, idGame) VALUES(:name, :idGame)');
@@ -28,6 +28,7 @@ class UserManager
 		$query->execute();
 	}
 
+	// Récupérer un utilisateur à partir de l'id d'un objet Game
     public function getByGame($idGame)
     {
         $idGame = (int) $idGame;
