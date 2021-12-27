@@ -1,6 +1,6 @@
 # Memory
 
-Le projet consistait à réaliser le jeu Memory en HTML/PHP/JS. Memory est un jeu de mémoire dont l'objectif est de trouver toutes les paires le plus rapidement possible. Ce projet dans son ensemble était à réaliser ce jeu de manière à pouvoir l'utiliser comme support pédagogique. C'est donc un projet technique et pédagogique.
+Le projet consistait à réaliser le jeu Memory en <i><b>HTML/PHP/JS</b></i>. Memory est un jeu de mémoire dont l'objectif est de trouver toutes les paires le plus rapidement possible. L'objectif global était de réaliser ce jeu de manière à pouvoir l'utiliser comme support pédagogique. C'est donc un projet <i><b>technique</b></i> et <i><b>pédagogique</b></i>.
 
 # Table des matières
 - [Contenu du projet Git](#contenu)
@@ -25,24 +25,24 @@ Le projet consistait à réaliser le jeu Memory en HTML/PHP/JS. Memory est un je
 Vous trouverez dans le projet : 
  - les **dossiers technique** dans lequel il y a le code source.
  - le **diagramme de class** (à la racine du projet)
- - ce fichier **README.md**
+ - Ce fichier : **README.md**
  
    ## Readme <a name="readmeBalise"></a>
-    Ce fichier README.md est une documentation qui aborde les 2 aspects du projet :
+    Le fichier README.md est une documentation qui aborde les 2 aspects du projet :
     -  la partie **technique**
     -  la partie **gestion**
  
  ## Aspect Technique <a name="technique"></a>
  Cette partie expose : 
-  1. l'**architecture** du site et son fonctionnement général
-  2. le fonctionnement général du **code** et les choix techniques. En effet, dans la programmation, il arrive que plusieurs solutions techniques permettent la réalisation d'une seule et même fonctionnalité. Nous détailleront les différents choix possibles ainsi que la solution adoptée.
+  1. l'**architecture** du site et son **fonctionnement** général
+  2. le fonctionnement général du **code** et les choix techniques. En effet, dans la programmation, il arrive que plusieurs solutions techniques permettent la réalisation d'une **seule et même fonctionnalité**. Nous détailleront les différents choix possibles ainsi que la solution adoptée.
   
 ### L'architecture <a name="architecture"></a>
-Cette application web est développée en adoptant l'architecture MVC (Model View Controller). Cette architecture facilite l'organisation des fichiers ainsi que leurs rôles. Elle est liée à la POO (Programmation Orienté Objet). Elle contient 4 éléments et les échangent entre eux sont prédéfinis : 
+Cette application web est développée en adoptant l'architecture <i><b>MVC (Model View Controller)</b></i>. Cette architecture facilite **l'organisation des fichiers** ainsi que leurs **rôles**. Elle est liée à la <i><b>POO (Programmation Orienté Objet)</b></i>. Elle contient 4 éléments et les échangent entre eux sont prédéfinis : 
 - #### Le routeur <a name="routeur"></a>
-  - Le routeur appelle la fonction associé à l'url en récupérant le paramètre action. pour se faire, il recherche dans tous les Controllers une fonction possédant ce nom.
+  - Le routeur appelle la fonction associé à l'url en récupérant le paramètre <i>"action"</i>. Pour se faire, il recherche dans tous les **Controllers** une fonction possédant ce nom.
 - #### Le dossier Controller <a name="controller"></a>
-  - Un controller est une class contenant différentes fonctions. Ces fonctions peuvent avoir différentes utilisations. Il se peut elles appellent des fonctions du Model afin d'échanger avec la base de donnée (un ajout, une récupération, une modification ou une suppression). Elle peut aussi afficher une template provenant du dossier View contenant le code HTML. Dans le pluspart des cas, les deux à la fois, en récupérant des données en base (à l'aide du Model) et en les insérant dans la template (View)
+  - Un **controller** est une class contenant différentes fonctions. Ces fonctions peuvent avoir différentes utilisations. Il se peut qu'elles appellent des fonctions du <i><b>Model</b></i> afin d'échanger avec la base de donnée (un ajout, une récupération, une modification ou une suppression). Elle peut aussi afficher une template provenant du dossier <i><b>View</b></i> contenant le code HTML. Habituellement, les **deux à la fois** : en récupérant des données en base (à l'aide du Model) et en les insérant dans la template (View)
 - #### Le dossier Model <a name="model"></a>
   - Le dossier Model contient généralement des paires d'objets associées: l'entité et son manager. Une entité possède les attributs de la class et les fonctions permettant la récupération ou l'ajout d'une donnée d'un attribut. Une Entité correspond à une table dans la base de donnée. Le deuxième Objet est le Manager qui possèdent les fonctions qui rendent possible les échanges avec la base de données spécifique à cette objet. En effet, plusieurs entités dans un même projet n'ont pas toutes les mêmes fonctions.
 - #### Le dossier View <a name="view"></a>
@@ -150,7 +150,7 @@ Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, l
    
    Deux Entités se trouvent dans ce projet : Game et User. 
    Une Troisième entité appelée Cartes était réalisable. L'inconvéniant était la modification de ses éléments. Dans l'état du projet, une boucle est effectuée afin de créer un tableau avec les noms des images, cette boucle est donc exécutée à chaque nouvelle partie. En revanche si on modifie les cartes ou qu'on en ajoute, l'application s'adaptera à ce changement. Alors que si le tableau se trouve en base, il faudra, en plus d'apporter des modifications dans les dossiers, modifier le tableau en base.
-   ### Les Issues <a name="issue"></a>
+   ### Les Issues <a name="issues"></a>
    Ci dessous le lien des issues de Memory : 
       https://github.com/Doudou-A/Memory/issues?q=is%3Aissue+is%3Aclosed
    
@@ -163,7 +163,7 @@ Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, l
    A l'aide de ce tableau, les tâches sont reliées aux développeurs. Le chef de projet peut rapidement visualiser l'avancement du projet. Il se divise habituellement en 3 colonnes : 
    - ToDo : les tâches à effectuer
    - InProgress : les tâches sont assignées et commencées
-   -Done : les tâches sont finalisées
+   - Done : les tâches sont finalisées
    
    ### Les Branches et les Pull Requests <a name="branche"></a>
    
