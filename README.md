@@ -20,8 +20,6 @@ Le projet consistait à réaliser le jeu Memory en HTML/PHP/JS. Memory est un je
    - [Issues](#issues)
    - [Project](#project)
    - [Branche/PullRequest](#branche)
-3. [Third Example](#third-example)
-
 
 ## Contenu du projet <a name="contenu"></a>
 Vous trouverez dans le projet : 
@@ -29,7 +27,7 @@ Vous trouverez dans le projet :
  - le **diagramme de class** (à la racine du projet)
  - ce fichier **README.md**
  
-   ## Readme <a name="readme">
+   ## Readme <a name="readme"></a>
     Ce fichier README.md est une documentation qui aborde les 2 aspects du projet :
     -  la partie **technique**
     -  la partie **gestion**
@@ -39,17 +37,17 @@ Vous trouverez dans le projet :
   1. l'**architecture** du site et son fonctionnement général
   2. le fonctionnement général du **code** et les choix techniques. En effet, dans la programmation, il arrive que plusieurs solutions techniques permettent la réalisation d'une seule et même fonctionnalité. Nous détailleront les différents choix possibles ainsi que la solution adoptée.
   
-###L'architecture <a name="architecture"></a>
+### L'architecture <a name="architecture"></a>
 Cette application web est développée en adoptant l'architecture MVC (Model View Controller). Cette architecture facilite l'organisation des fichiers ainsi que leurs rôles. Elle est liée à la POO (Programmation Orienté Objet). Elle contient 4 éléments et les échangent entre eux sont prédéfinis : 
-- ####Le routeur <a name="routeur"></a>
+- #### Le routeur <a name="routeur"></a>
   - Le routeur appelle la fonction associé à l'url en récupérant le paramètre action. pour se faire, il recherche dans tous les Controllers une fonction possédant ce nom.
-- ####Le dossier Controller <a name="controller"></a>
+- #### Le dossier Controller <a name="controller"></a>
   - Un controller est une class contenant différentes fonctions. Ces fonctions peuvent avoir différentes utilisations. Il se peut elles appellent des fonctions du Model afin d'échanger avec la base de donnée (un ajout, une récupération, une modification ou une suppression). Elle peut aussi afficher une template provenant du dossier View contenant le code HTML. Dans le pluspart des cas, les deux à la fois, en récupérant des données en base (à l'aide du Model) et en les insérant dans la template (View)
-- ####Le dossier Model <a name="model"></a>
+- #### Le dossier Model <a name="model"></a>
   - Le dossier Model contient généralement des paires d'objets associées: l'entité et son manager. Une entité possède les attributs de la class et les fonctions permettant la récupération ou l'ajout d'une donnée d'un attribut. Une Entité correspond à une table dans la base de donnée. Le deuxième Objet est le Manager qui possèdent les fonctions qui rendent possible les échanges avec la base de données spécifique à cette objet. En effet, plusieurs entités dans un même projet n'ont pas toutes les mêmes fonctions.
-- ####Le dossier View <a name="view"></a>
+- #### Le dossier View <a name="view"></a>
   - C'est le dossier dans lequel se trouve les templates de l'application dont le code HTML est affiché par le navigateur. 
-- ####Exemple du fonctionnement de l'architecture dans ce projet pour l'url "index.php" : <a name="Exemple"></a>
+- #### Exemple du fonctionnement de l'architecture dans ce projet pour l'url "index.php" : <a name="Exemple"></a>
   Cet url ne possède pas de paramètre "action". Le routeur vas donc appelé la fonction index() de la class HomeController :
 <pre>
   if (<i><b>!empty($_GET['action'])</b></i>) {
@@ -114,13 +112,13 @@ Cette application web est développée en adoptant l'architecture MVC (Model Vie
     <?php endif; ?>
 ```
 
-###Fonctionnement de l'application
+### Fonctionnement de l'application <a name="fonctionnement"></a>
 Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, le fonctionnement du routeur est plus compréhensible et explicable dans le cas où le site possède plusieur page. De plus, la quasi-totalité des applications web avec une base de donnée ont plus d'une page.
    
- - ####Page d'accueil
+ - #### Page d'accueil <a name="accueil"></a>
    On a vu dans [Exemple du fonctionnement de l'architecture](#Exemple du fonctionnement de l'architecture dans ce projet pour l'url "index.php") comment fonctionne techniquement l'application sur l'url index.php. En plus d'afficher les meilleurs scores, il y a un formulaire que l'utilisateur rempli avant de commencer à jouer. 
  
- - #### Page du jeu
+ - #### Page du jeu <a name="jeu"></a>
    Après avoir validé le formulaire, l'utilisateur est automatiquement dirigé vers la page du jeu. Elle affiche le nom du joueur, le plateau de jeu, le chronomètre qui se lance automatiquement au début de la partie et la barre de progression qui se rempli en fonction du temps.
    
    Plusieurs choix étaient possibles pour l'affichage des cartes :
