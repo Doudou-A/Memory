@@ -3,19 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/GameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/GameManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/GameManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/abricot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/banane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cerise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cerise2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cerise3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/citron-jaune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/citron-vert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/fraise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/frambroise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/grenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/mangue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/pasteque.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/peche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/screen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/css/accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/css/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style/js/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/js/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/indexView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/indexView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +86,10 @@
       <workItem from="1640208602109" duration="3231000" />
       <workItem from="1640327755068" duration="64000" />
       <workItem from="1640328640092" duration="6129000" />
-      <workItem from="1640492714900" duration="9043000" />
+      <workItem from="1640492714900" duration="13409000" />
+      <workItem from="1640543326699" duration="548000" />
+      <workItem from="1640580308105" duration="3328000" />
+      <workItem from="1640586338385" duration="5241000" />
     </task>
     <servers />
   </component>
@@ -90,10 +101,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1640342872195" />
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640442277562">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640597009183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1640442277562" />
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1640597009183" />
     <state x="335" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640209382096">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -118,6 +129,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="521" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1640358353687" />
+    <state x="100" y="84" width="1240" height="784" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1640507537709">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state x="100" y="84" width="1240" height="784" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1440.804@0.25.1440.804" timestamp="1640507537709" />
     <state x="421" y="217" width="597" height="548" key="find.popup" timestamp="1640500516170">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

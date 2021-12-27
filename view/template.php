@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div class="title">Jeu de Mémoire</div>
+<div class="title">Memory</div>
 <?= $content; ?>
 
 </body>
