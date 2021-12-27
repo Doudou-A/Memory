@@ -3,13 +3,13 @@
 Le projet consistait à réaliser le jeu Memory en HTML/PHP/JS. Memory est un jeu de mémoire dont l'objectif est de trouver toutes les paires le plus rapidement possible. Ce projet dans son ensemble était à réaliser ce jeu de manière à pouvoir l'utiliser comme support pédagogique. C'est donc un projet technique et pédagogique.
 
 # Table des matières
-1. [Contenu du projet](##Contenu du projet)
+1. [Contenu du projet Git](#contenu)
    -
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 
 
-## Contenu du projet
+## Contenu du projet <a name="contenu">
 Vous trouverez dans le projet : 
  - les **dossiers technique** dans lequel il y a le code source.
  - le **diagramme de class** (à la racine du projet)
@@ -110,19 +110,19 @@ Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, l
    Après avoir validé le formulaire, l'utilisateur est automatiquement dirigé vers la page du jeu. Elle affiche le nom du joueur, le plateau de jeu, le chronomètre qui se lance automatiquement au début de la partie et la barre de progression qui se rempli en fonction du temps.
    
    Plusieurs choix étaient possibles pour l'affichage des cartes :
-  - Soit deux div dans la boucle for, une étant la carte grise et l'autre celle de l'image. A l'aide du CSS, on cache une des deux div. Lors du clique sur l'image on inverse les classes CSS à l'aide d'un code en JS. La div affiliée au fruit apparaît alors que la div associée à la carte grise disparaît. 
-  - Soit une div affichant la carte grise. Lors du clique et en utilisant le JSON contenant tous les fruits, on change l'attribut src de la div par le nom du fruit. 
+  - Soit deux balises <img/> dans la boucle for, une étant la carte grise et l'autre celle de l'image. A l'aide du CSS, on cache une des deux balises. Lors du clique sur l'image on inverse les classes CSS à l'aide d'un code en JS. La balise affiliée au fruit apparaît alors que la balise associée à la carte grise disparaît. 
+  - Soit une div affichant la carte grise. Lors du clique et en utilisant le JSON contenant tous les fruits, on change l'attribut "src" de la balise <img/> par le nom du fruit. 
   
-  Le premier est certe plus simple, en revanche les JSON sont très souvent utilisé dans le développement web, que le développeur soit FullStack ou BackEnd ou FrontEnd, il est important de savoir maitriser ce type d'objet. C'est donc dans un but pédagogique et non technique que cette solution fût adoptée.
+  Le premier est certe plus simple, en revanche les JSON sont très souvent utilisé dans le développement web, que le développeur soit FullStack, BackEnd ou FrontEnd, il est important de savoir maitriser ce type d'objet. C'est donc dans un but pédagogique et non technique que cette solution fût adoptée.
   
-  Lors du click la fonction onClickManage est appelé, si c'est le premier click, un objet "firstClickImg" est créée contenant le nom de l'image et son numéro. Lors du deuxième click, l'image est comparée avec l'image de "firstClickImg". Si le nom est différent et le numéro est identique (l'utilisateur a cliqué deux fois sur la même carte), les cartes sont retournées sinon elles restent afficher et on bloque le click sur ces div en enlevant la class imageClick. 
-  Un compteur de click est comparé à chaque click avec le nombre de fruit totaux. S'ils sont égaux, la partie est terminée. 
-  Une barre de progression prendre en considération la contrainte temps du jeu. La partie est perdu si la barre est rempli. 
+  Lors du click sur l'image, la fonction onClickManage() est appelé, si c'est le premier click, un objet "firstClickImg" est créée contenant le nom de l'image et son numéro. Lors du deuxième click, les informations de la deuxième image est comparée avec les informations de "firstClickImg". Si le nom est différent ou que le numéro est identique (l'utilisateur a cliqué deux fois sur la même carte), les cartes sont retournées. Dans le cas ou le nom est identique et le numéro différent, elles restent affichées et on bloque le click sur ces balises en enlevant la class imageClick. 
+   A chaque click, un compteur de click est incrémenté et comparé avec le nombre de fruit totaux. S'ils sont égaux, la partie est terminée. 
+  Une barre de progression permet de à l'utilisateur de prendre en considération la contrainte temps du jeu. La partie est perdu si la barre est remplie. 
   
-  lorsque l'utilisateur gagne, la fonction addGame() de l'objet GameController est appelée. Elle crée une nouvelle Game en base et un nouvel User relié au Game. Par la suite, cette fonction redirige l'utulisateur à la page d'accueil en modifiant l'url HTTP.
+  Lorsque l'utilisateur gagne, la fonction addGame() de l'objet GameController est appelée. Elle crée une nouvelle Game en base et un nouvel User relié au Game. Par la suite, cette fonction redirige l'utilisateur à la page d'accueil en modifiant l'url HTTP.
   
  ## Aspect Gestion du projet
- La partie Gestion est tout aussi importante que la partie technique d'un projet. Elle permet de rendre la réalisation du projet la plus fluide possible en évitant de modifier des fonctionnalités existantes ou de travailler sur des éléments qui ne seront pas utilisés finalement. GitHub propose, en plus de pouvoir sauvegarder son projet, de préparer et gérer son projet. 
+ La partie Gestion est tout aussi importante que la partie technique d'un projet. Elle rend la réalisation du projet fluide en évitant de modifier des fonctionnalités existantes ou de travailler sur des éléments qui ne seront pas utilisés finalement. GitHub propose, en plus de pouvoir sauvegarder son projet, de le préparer et gérer. 
  Cette partie expose : 
  
  - Le diagramme de classe
@@ -131,26 +131,25 @@ Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, l
  - La création des Branches et des Pull Requests
   
    ### Le diagramme de classe
-   Ce diagramme est un schéma utilisé pour présenter les différentes entités du projet ainsi que les relations entre elles.
+   Ce diagramme est un schéma utilisé pour présenter les différentes entités du projet ainsi que les relations entre elles dans de la base de donnée.
    Deux Entités se trouvent dans ce projet : Game et User. 
-   Une Troisième entité appelé Cartes était réalisable. L'inconvéniant était la modification de ses éléments. Dans l'état du projet, une boucle est effectué afin de créer un tableau avec les noms des images, cette boucle est donc effectué pour chaque nouvelle partie. En revanche si l'on modifie les cartes ou on en ajoute, l'application s'adaptera à ce changement. Alors que si le tableau se trouve en base, il faudra en plus de modifier les cartes au niveau du projet, modifier le tableau en base.
+   Une Troisième entité appelée Cartes était réalisable. L'inconvéniant était la modification de ses éléments. Dans l'état du projet, une boucle est effectuée afin de créer un tableau avec les noms des images, cette boucle est donc exécutée à chaque nouvelle partie. En revanche si on modifie les cartes ou qu'on en ajoute, l'application s'adaptera à ce changement. Alors que si le tableau se trouve en base, il faudra, en plus d'apporter des modifications dans les dossiers, modifier le tableau en base.
    ### Les Issues
-   Ci dessous le lien des issues de ce projet : 
+   Ci dessous le lien des issues de Memory : 
       https://github.com/Doudou-A/Memory/issues?q=is%3Aissue+is%3Aclosed
-   Chaque issues correspond à une étape du projet. Il est conseillé de toute les répertorier avant de commencer à coder. Vous pourrez trouver.
+   Chaque issue correspond à une étape du projet. Il est conseillé de toute les répertorier avant de commencer à coder.
    
    ### Le projet
-   Ci-dessous le project Github du projet : 
+   Ci-dessous le project Github de Memory : 
    https://github.com/Doudou-A/Memory/projects/1
-   Ce tableau permet de rattaché les tâches aux développeurs ainsi que de visualiser rapidement l'avancé du projet. Il se divise habituellement en 3 colonnes : 
-   - ToDo : les tâches a effectué
+   A l'aide de ce tableau, les tâches sont reliées aux développeurs. Le chef de projet peut rapidement visualiser l'avancement du projet. Il se divise habituellement en 3 colonnes : 
+   - ToDo : les tâches à effectuer
    - InProgress : les tâches sont assignées et commencées
-   -Done : lorsque la tâche est terminée
+   -Done : les tâches sont finalisées
    
    ### Les Branches et les Pull Requests
-   Ci-dessous les différentes branches du projet qui ont été cloturer lors du Pull Request :
+   Ci-dessous les différentes branches du projet qui ont été clôturées lors du Pull Request :
    https://github.com/Doudou-A/Memory/pulls?q=is%3Apr+is%3Aclosed
-   Le système de branche à pour avantage de travailler à plusieurs sur le même projet en même sans créer de gêne entre les développeurs. Chaque développeur possède a une branche dans laquelle il peut se concentre sur la réalisation de la tâche ou d'un débug sans qu'un autre développeur intervient sur les mêmes fichiers et créer des conflit lors du Pull Request.
-   Le PullRequest est effectué lorsque le développeur a terminer sa tâche. Les fichiers modifiés écrasent les fichiers antérieurs de la branche Principale. Il est possible de fermer une issue en commentant le pull request par son ID. Le chef de projet pourra donc immédiatement savoir quel était l'ojectif de cette tâche.
-   
+   Le système de branche à pour avantage de travailler à plusieurs sur la même application en même temps sans créer de gêne entre les développeurs. Chaque développeur créer une branche dans laquelle il peut se concentrer sur la réalisation de la tâche ou du débugage sans qu'un autre développeur intervient sur les mêmes fichiers.
+   Le PullRequest est effectué lorsque le développeur a terminé sa tâche. Les fichiers modifiés écrasent les fichiers antérieurs de la branche Principale. Les fichiers non modifiés ne sont pas écrasés. Il est possible de fermer une issue en commentant le pull request par son ID. Le chef de projet pourra donc immédiatement savoir quel était l'ojectif de cette tâche.
    

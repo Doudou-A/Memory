@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d30e4f8b-f096-42e1-8e6f-aae95b2fe08a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/abricot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cerise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cerise2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cerise3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/citron-jaune.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/citron-vert.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/fraise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/frambroise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/grenade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/mangue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/pasteque.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/peche.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -82,7 +68,7 @@
       <workItem from="1640492714900" duration="13409000" />
       <workItem from="1640543326699" duration="548000" />
       <workItem from="1640580308105" duration="3328000" />
-      <workItem from="1640586338385" duration="15771000" />
+      <workItem from="1640586338385" duration="16976000" />
     </task>
     <servers />
   </component>
