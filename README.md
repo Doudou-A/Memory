@@ -4,7 +4,6 @@ Le projet consistait à réaliser le jeu Memory en <i><b>HTML/PHP/JS</b></i>. Me
 
 # Table des matières
 - [Contenu du projet Git](#contenu)
-   - [Memory.SQL](#SQL)
    - [Readme](#readmeBalise)
 1. [Aspect Technique](#technique)
     - [Architecture](#architecture)
@@ -183,7 +182,7 @@ Il était certe possible de réaliser ce projet sur une seul page. Néanmoins, l
    
    Le PullRequest est effectué lorsque le développeur a terminé sa tâche. Les fichiers modifiés écrasent les fichiers antérieurs de la branche Principale. Les fichiers non modifiés ne sont pas écrasés. Il est possible de fermer une issue en commentant le pull request par son ID. Le chef de projet pourra donc immédiatement savoir quel était l'ojectif de cette tâche.
    
- 3. ## Utilisation <a name="Installation"></a>
+ 3. ## Installation <a name="Installation"></a>
     - Dans le terminal, positionnez vous dans le dossier où se trouvera le projet. Lancez cette commande : 
     ```
     git clone https://github.com/Doudou-A/Memory.git
