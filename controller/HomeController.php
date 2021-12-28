@@ -5,6 +5,7 @@ namespace Controller;
 require_once 'model/GameManager.php';
 require_once 'model/UserManager.php';
 
+//Namespace
 use Model\{GameManager, UserManager};
 
 class HomeController
@@ -23,8 +24,8 @@ class HomeController
             $bestScore = [];
             for ($i = 0; $i < 5; $i++) {  // On souhaite uniquement les 5 meilleurs scores
                 if($i > count($allScores) - 1) continue; // Si le nombre total de partie est inférieur à 5
-                $game = $managerGame->getByTime($allScores[$i]["gameTime"]); // Récupérer la partiedans la bdd à partir du temps
-                $user = $managerUser->getByGame($game->id()); // Récupérer le joueur à partir de l'objet partie
+                $game = $managerGame->getByTime($allScores[$i]["gameTime"]); // Récupérer le jeu dans la bdd à partir du temps
+                $user = $managerUser->getByGame($game->id()); // Récupérer le joueur à partir de l'objet Game
 
                 // Modification du format de l'affichage pour le temps
                 $aTime = explode(".", $game->gameTime() / 60);
@@ -39,7 +40,7 @@ class HomeController
             }
         }
 
-        require('view/indexView.php');
+        require('view/indexView.php'); // Appel du template
     }
 
 
