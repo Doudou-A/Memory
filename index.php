@@ -3,15 +3,16 @@
 require 'controller/GameController.php';
 require 'controller/HomeController.php';
 
+//Namespace
 use Controller\{HomeController, GameController};
 
 //Routeur
 try {
-    // Instanciation des controller
+    // Instanciation des Controller
     $controllerFirst = new HomeController;
     $controllerSecond = new GameController;
 
-    // Recherche de lafonction dans les controller à partir du paramètre 'action' transmis par l'url
+    // Recherche de la fonction dans les controller à partir du paramètre 'action' transmis par l'url
     if (!empty($_GET['action'])) {
         $action = $_GET['action'];
         if (method_exists($controllerFirst, $action)) {

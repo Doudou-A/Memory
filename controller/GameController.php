@@ -64,7 +64,7 @@ class GameController
         ]);
         $managerUser->add($user); // Création d'un nouvel User en base
 
-        header("Location: index.php");
+        header("Location: index.php"); // Redirection vers la page d'accueil
         exit;
 
     }
