@@ -24,8 +24,8 @@ Le projet consistait à réaliser le jeu Memory en <i><b>HTML/PHP/JS</b></i>. Me
 ## Contenu du projet <a name="contenu"></a>
 Vous trouverez dans le projet : 
  - Les **dossiers technique** dans lequel il y a le code source.
- - Le **diagramme de class** (à la racine du projet)
- - Le fichier .sql qui génèrent les tables et attributs de la base de donnée
+ - Le **diagramme de class**. Ce fichier est transmis par mail.
+ - Le fichier .sql qui génèrent les tables et attributs de la base de donnée. Ce fichier est transmis par mail.
  - Ce fichier : **README.md**
  
    ## Readme <a name="readmeBalise"></a>
